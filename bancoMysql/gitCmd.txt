@@ -1,5 +1,9 @@
 
 victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3
 $ git init
 Initialized empty Git repository in C:/Users/victo/OneDrive/Documentos/NetBeansProjects/A3/.git/
 
@@ -111,9 +115,15 @@ Changes to be committed:
 
 
 victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
+$ git config --global user.email "victoralves169@outlook.com"
+
+victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
+$ git config --global user.name "João Victor"
+
+victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
 $ git commit -m "initial commit"
-[master (root-commit) 131c257] initial commit
- 42 files changed, 6623 insertions(+)
+[master (root-commit) 27fc69b] initial commit
+ 42 files changed, 6690 insertions(+)
  create mode 100644 "bancoMysql/C\303\263digo Mysql.sql"
  create mode 100644 bancoMysql/gitCmd.txt
  create mode 100644 build.xml
@@ -158,36 +168,7 @@ $ git commit -m "initial commit"
  create mode 100644 src/VIEW/TelaLogin.java
 
 victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
-$ git config --global user.email "victoralves@outlook.com"
-
-victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
-$ git config --global user.name "ribeial"
-
-victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
-$ git push
-fatal: No configured push destination.
-Either specify the URL from the command-line or configure a remote repository using
-
-    git remote add <name> <url>
-
-and then push using the remote name
-
-    git push <name>
-
-
-victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
 $ git remote add origin https://github.com/ribeial/projetoA3.2021
-
-victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
-$ git push
-fatal: The current branch master has no upstream branch.
-To push the current branch and set the remote as upstream, use
-
-    git push --set-upstream origin master
-
-
-victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
-$ ^C
 
 victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
 $ git push --set-upstream origin master
@@ -195,7 +176,7 @@ Enumerating objects: 52, done.
 Counting objects: 100% (52/52), done.
 Delta compression using up to 2 threads
 Compressing objects: 100% (51/51), done.
-Writing objects: 100% (52/52), 70.43 KiB | 1.15 MiB/s, done.
+Writing objects: 100% (52/52), 70.51 KiB | 760.00 KiB/s, done.
 Total 52 (delta 17), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (17/17), done.
 remote:
@@ -208,4 +189,3 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
 $
-

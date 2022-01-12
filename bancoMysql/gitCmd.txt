@@ -1,0 +1,211 @@
+
+victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3
+$ git init
+Initialized empty Git repository in C:/Users/victo/OneDrive/Documentos/NetBeansProjects/A3/.git/
+
+victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bancoMysql/
+        build.xml
+        manifest.mf
+        nbproject/
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
+$ git add .
+warning: LF will be replaced by CRLF in src/VIEW/Alimentacao.form.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/VIEW/Alimentacao.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/VIEW/Cadastro.form.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/VIEW/Cadastro.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/VIEW/ConsumoDeAgua.form.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/VIEW/ConsumoDeAgua.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/VIEW/ControleDePeso.form.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/VIEW/ControleDePeso.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/VIEW/Cronometro.form.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/VIEW/Cronometro.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/VIEW/Exercicios.form.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/VIEW/Exercicios.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/VIEW/Menu.form.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/VIEW/Menu.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/VIEW/Perfil.form.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/VIEW/Perfil.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/VIEW/TelaLogin.form.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/VIEW/TelaLogin.java.
+The file will have its original line endings in your working directory
+
+victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   "bancoMysql/C\303\263digo Mysql.sql"
+        new file:   bancoMysql/gitCmd.txt
+        new file:   build.xml
+        new file:   manifest.mf
+        new file:   nbproject/build-impl.xml
+        new file:   nbproject/genfiles.properties
+        new file:   nbproject/private/config.properties
+        new file:   nbproject/private/private.properties
+        new file:   nbproject/private/private.xml
+        new file:   nbproject/project.properties
+        new file:   nbproject/project.xml
+        new file:   src/DAO/ConexaoDAO.java
+        new file:   src/DAO/ExerciciosDAO.java
+        new file:   src/DAO/UsuarioDAO.java
+        new file:   src/DTO/CadapioDTo.java
+        new file:   src/DTO/ConsumoDAguaDTO.java
+        new file:   src/DTO/ExerciciosDTO.java
+        new file:   src/DTO/RegistroPesoDTO.java
+        new file:   src/DTO/UsuarioDTO.java
+        new file:   src/IMAGES/723462.png
+        new file:   src/IMAGES/OI0.png
+        new file:   "src/IMAGES/Sem t\303\255tulo.jpg"
+        new file:   src/IMAGES/bem(redim).png
+        new file:   src/IMAGES/login.png
+        new file:   src/VIEW/Alimentacao.form
+        new file:   src/VIEW/Alimentacao.java
+        new file:   src/VIEW/Cadastro.form
+        new file:   src/VIEW/Cadastro.java
+        new file:   src/VIEW/ConsumoDeAgua.form
+        new file:   src/VIEW/ConsumoDeAgua.java
+        new file:   src/VIEW/ControleDePeso.form
+        new file:   src/VIEW/ControleDePeso.java
+        new file:   src/VIEW/Cronometro.form
+        new file:   src/VIEW/Cronometro.java
+        new file:   src/VIEW/Exercicios.form
+        new file:   src/VIEW/Exercicios.java
+        new file:   src/VIEW/Menu.form
+        new file:   src/VIEW/Menu.java
+        new file:   src/VIEW/Perfil.form
+        new file:   src/VIEW/Perfil.java
+        new file:   src/VIEW/TelaLogin.form
+        new file:   src/VIEW/TelaLogin.java
+
+
+victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
+$ git commit -m "initial commit"
+[master (root-commit) 131c257] initial commit
+ 42 files changed, 6623 insertions(+)
+ create mode 100644 "bancoMysql/C\303\263digo Mysql.sql"
+ create mode 100644 bancoMysql/gitCmd.txt
+ create mode 100644 build.xml
+ create mode 100644 manifest.mf
+ create mode 100644 nbproject/build-impl.xml
+ create mode 100644 nbproject/genfiles.properties
+ create mode 100644 nbproject/private/config.properties
+ create mode 100644 nbproject/private/private.properties
+ create mode 100644 nbproject/private/private.xml
+ create mode 100644 nbproject/project.properties
+ create mode 100644 nbproject/project.xml
+ create mode 100644 src/DAO/ConexaoDAO.java
+ create mode 100644 src/DAO/ExerciciosDAO.java
+ create mode 100644 src/DAO/UsuarioDAO.java
+ create mode 100644 src/DTO/CadapioDTo.java
+ create mode 100644 src/DTO/ConsumoDAguaDTO.java
+ create mode 100644 src/DTO/ExerciciosDTO.java
+ create mode 100644 src/DTO/RegistroPesoDTO.java
+ create mode 100644 src/DTO/UsuarioDTO.java
+ create mode 100644 src/IMAGES/723462.png
+ create mode 100644 src/IMAGES/OI0.png
+ create mode 100644 "src/IMAGES/Sem t\303\255tulo.jpg"
+ create mode 100644 src/IMAGES/bem(redim).png
+ create mode 100644 src/IMAGES/login.png
+ create mode 100644 src/VIEW/Alimentacao.form
+ create mode 100644 src/VIEW/Alimentacao.java
+ create mode 100644 src/VIEW/Cadastro.form
+ create mode 100644 src/VIEW/Cadastro.java
+ create mode 100644 src/VIEW/ConsumoDeAgua.form
+ create mode 100644 src/VIEW/ConsumoDeAgua.java
+ create mode 100644 src/VIEW/ControleDePeso.form
+ create mode 100644 src/VIEW/ControleDePeso.java
+ create mode 100644 src/VIEW/Cronometro.form
+ create mode 100644 src/VIEW/Cronometro.java
+ create mode 100644 src/VIEW/Exercicios.form
+ create mode 100644 src/VIEW/Exercicios.java
+ create mode 100644 src/VIEW/Menu.form
+ create mode 100644 src/VIEW/Menu.java
+ create mode 100644 src/VIEW/Perfil.form
+ create mode 100644 src/VIEW/Perfil.java
+ create mode 100644 src/VIEW/TelaLogin.form
+ create mode 100644 src/VIEW/TelaLogin.java
+
+victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
+$ git config --global user.email "victoralves@outlook.com"
+
+victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
+$ git config --global user.name "ribeial"
+
+victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
+$ git remote add origin https://github.com/ribeial/projetoA3.2021
+
+victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
+$ ^C
+
+victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
+$ git push --set-upstream origin master
+Enumerating objects: 52, done.
+Counting objects: 100% (52/52), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (51/51), done.
+Writing objects: 100% (52/52), 70.43 KiB | 1.15 MiB/s, done.
+Total 52 (delta 17), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (17/17), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/ribeial/projetoA3.2021/pull/new/master
+remote:
+To https://github.com/ribeial/projetoA3.2021
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3 (master)
+$
+

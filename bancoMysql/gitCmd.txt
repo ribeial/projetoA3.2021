@@ -1,4 +1,7 @@
 
+passo a passo
+
+
 victo@JOAO-VICTOR MINGW64 ~/OneDrive/Documentos/NetBeansProjects/A3
 $ git status
 fatal: not a git repository (or any of the parent directories): .git

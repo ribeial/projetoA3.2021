@@ -3,8 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/victo/OneDrive/Documentos/NetBeansProjects/A3/src/DTO/ExerciciosDTO.java</file>
             <file>file:/C:/Users/victo/OneDrive/Documentos/NetBeansProjects/A3/src/VIEW/TelaLogin.java</file>
-            <file>file:/C:/Users/victo/OneDrive/Documentos/NetBeansProjects/A3/src/VIEW/LoginTest.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Documentos/NetBeansProjects/A3/src/DAO/ExerciciosDAO.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Documentos/NetBeansProjects/A3/src/VIEW/Exercicios.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Documentos/NetBeansProjects/A3/src/DAO/UsuarioDAO.java</file>
         </group>
     </open-files>
 </project-private>

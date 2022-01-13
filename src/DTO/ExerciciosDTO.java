@@ -8,15 +8,15 @@ import java.util.List;
  */
 public class ExerciciosDTO {
 
-    private String nomeExercicios, serieExercicios, repetição_exercicio;
+    private String nomeExercicios, serieExercicios, repeticao_exercicio;
 
     public ExerciciosDTO() {
     }
 
-    public ExerciciosDTO(String nomeExercicios, String serieExercicios, String repetição_exercicio, UsuarioDTO usuarioDTO) {
+    public ExerciciosDTO(String nomeExercicios, String serieExercicios, String repeticao_exercicio, UsuarioDTO usuarioDTO) {
         this.nomeExercicios = nomeExercicios;
         this.serieExercicios = serieExercicios;
-        this.repetição_exercicio = repetição_exercicio;
+        this.repeticao_exercicio = repeticao_exercicio;
     }
 
     public String getNomeExercicios() {
@@ -35,12 +35,12 @@ public class ExerciciosDTO {
         this.serieExercicios = serieExercicios;
     }
 
-    public String getRepetição_exercicio() {
-        return repetição_exercicio;
+    public String getRepeticao_exercicio() {
+        return repeticao_exercicio;
     }
 
-    public void setRepetição_exercicio(String repetição_exercicio) {
-        this.repetição_exercicio = repetição_exercicio;
+    public void setRepetição_exercicio(String repeticao_exercicio) {
+        this.repeticao_exercicio = repeticao_exercicio;
     }
 
     public void add(List<ExerciciosDTO> exercicios) {

@@ -29,7 +29,7 @@ public class Exercicios extends javax.swing.JFrame {
             modelo.addRow(new Object[]{
                 e.getNomeExercicios(),
                 e.getSerieExercicios(),
-                e.getRepetição_exercicio()
+                e.getRepeticao_exercicio()
             });
         }
     }

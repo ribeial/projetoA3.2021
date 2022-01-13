@@ -19,12 +19,12 @@ public class ExerciciosDAO {
 
     public void create(ExerciciosDTO exerciciosDTO) {
         try {
-            String sql = "insert into exercicios (nome_exercicio, serie_exercicio, repetição_exercicio) values (?,?,?) ";
+            String sql = "insert into exercicios (nome_exercicio, serie_exercicio, repeticao_exercicio) values (?,?,?) ";
             conn = new ConexaoDAO().conectaBD();
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, exerciciosDTO.getNomeExercicios());
             pstmt.setString(2, exerciciosDTO.getSerieExercicios());
-            pstmt.setString(3, exerciciosDTO.getRepetição_exercicio());
+            pstmt.setString(3, exerciciosDTO.getRepeticao_exercicio());
             pstmt.executeUpdate();
             pstmt.close();
         }
@@ -57,11 +57,11 @@ public class ExerciciosDAO {
     public void update(ExerciciosDTO exercicios) {
         try {
             conn = new ConexaoDAO().conectaBD();
-            String sql = "UPDATE exercicios SET where nome_exercicio,=? serie_exercicio=?, repetição_exercicio=? ";
+            String sql = "UPDATE exercicios SET where nome_exercicio,=? serie_exercicio=?, repeticao_exercicio=? ";
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, exercicios.getNomeExercicios());
             pstmt.setString(2, exercicios.getSerieExercicios());
-            pstmt.setString(3, exercicios.getRepetição_exercicio());
+            pstmt.setString(3, exercicios.getRepeticao_exercicio());
             
             pstmt.executeUpdate();
         }

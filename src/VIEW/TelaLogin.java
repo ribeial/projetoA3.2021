@@ -66,6 +66,7 @@ public class TelaLogin extends javax.swing.JFrame {
         });
 
         jLabelSsueBemEstar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/OI0.png"))); // NOI18N
+        jLabelSsueBemEstar.setAlignmentY(0.0F);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

@@ -14,7 +14,7 @@ create table if not exists Usuario (
 
 create table if not exists Consumo_DAgua (
 	copos_agua varchar(255) primary key not null,
-	data_registro  date not null,
+	data_registro date not null,
 	foreign key (copos_agua) references usuario(cpf)
 );
 
@@ -27,7 +27,7 @@ create table if not exists Registro_Peso (
 	data_registro date primary key not null,
 	peso varchar(255) not null,
 	altura double null,
-	imc int (10)not null,
+	imc int (10) not null,
 	foreign key (peso) references usuario(cpf)
 );
 

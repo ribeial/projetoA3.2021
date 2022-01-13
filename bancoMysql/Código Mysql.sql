@@ -2,14 +2,14 @@ create database if not exists projetoA3;
 use projetoA3;
 
 create table if not exists Usuario (
-  	cpf varchar (255) primary key not null,
-	nome varchar (255) not null,
-  	senha varchar (255) not null,
-	email varchar(255) not null,
-	endereco varchar(255) not null,
-	tipo_sanguineo varchar(255) not null,
-	sexo varchar(255) not null,
-	numero_emergencia varchar(255) not null
+  	cpf varchar (11) primary key not null,
+	nome varchar (100) not null,
+  	senha varchar (8) not null,
+	email varchar(100) not null,
+	endereco varchar(200) not null,
+	tipo_sanguineo varchar(2) not null,
+	sexo varchar(1) not null,
+	numero_emergencia varchar(10) not null
 );
 
 create table if not exists Consumo_DAgua (
@@ -35,12 +35,9 @@ create table if not exists Exercicios (
 	nome_exercicio varchar(255) primary key not null,
 	serie_exercicio varchar(255) not null,
 	repeticao_exercicio varchar(255) not null
-  
-);
+  );
 
  
-
-
 
 
 

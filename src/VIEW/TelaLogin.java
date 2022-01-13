@@ -37,23 +37,19 @@ public class TelaLogin extends javax.swing.JFrame {
         jLabelSsueBemEstar = new javax.swing.JLabel();
 
         setTitle("Login");
-        setResizable(false);
-        getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(null);
+        jPanel1.addHierarchyBoundsListener(new java.awt.event.HierarchyBoundsListener() {
+            public void ancestorMoved(java.awt.event.HierarchyEvent evt) {
+            }
+            public void ancestorResized(java.awt.event.HierarchyEvent evt) {
+                jPanel1AncestorResized(evt);
+            }
+        });
 
         jLabelLogin.setText("Login");
-        jPanel1.add(jLabelLogin);
-        jLabelLogin.setBounds(110, 140, 40, 14);
-        jPanel1.add(jTextField1PreencherLogin);
-        jTextField1PreencherLogin.setBounds(110, 160, 350, 20);
 
         jLabelSenha.setText("Senha");
-        jPanel1.add(jLabelSenha);
-        jLabelSenha.setBounds(110, 190, 50, 14);
-        jPanel1.add(jPasswordFieldSenha);
-        jPasswordFieldSenha.setBounds(110, 210, 350, 20);
 
         jButtonAcessar.setText("Acessar");
         jButtonAcessar.addActionListener(new java.awt.event.ActionListener() {
@@ -61,8 +57,6 @@ public class TelaLogin extends javax.swing.JFrame {
                 jButtonAcessarActionPerformed(evt);
             }
         });
-        jPanel1.add(jButtonAcessar);
-        jButtonAcessar.setBounds(390, 250, 71, 23);
 
         jButtonCadastrar.setText("Cadastrar");
         jButtonCadastrar.addActionListener(new java.awt.event.ActionListener() {
@@ -70,17 +64,66 @@ public class TelaLogin extends javax.swing.JFrame {
                 jButtonCadastrarActionPerformed(evt);
             }
         });
-        jPanel1.add(jButtonCadastrar);
-        jButtonCadastrar.setBounds(290, 250, 90, 23);
 
         jLabelSsueBemEstar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/OI0.png"))); // NOI18N
-        jPanel1.add(jLabelSsueBemEstar);
-        jLabelSsueBemEstar.setBounds(0, 0, 600, 110);
 
-        getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 610, 310);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelSsueBemEstar, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(110, 110, 110)
+                        .addComponent(jLabelLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(110, 110, 110)
+                        .addComponent(jTextField1PreencherLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(110, 110, 110)
+                        .addComponent(jLabelSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(110, 110, 110)
+                        .addComponent(jPasswordFieldSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(290, 290, 290)
+                        .addComponent(jButtonCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(jButtonAcessar)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jLabelSsueBemEstar, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addComponent(jLabelLogin)
+                .addGap(6, 6, 6)
+                .addComponent(jTextField1PreencherLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jLabelSenha)
+                .addGap(6, 6, 6)
+                .addComponent(jPasswordFieldSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonCadastrar)
+                    .addComponent(jButtonAcessar))
+                .addContainerGap(37, Short.MAX_VALUE))
+        );
 
-        setSize(new java.awt.Dimension(614, 337));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        setSize(new java.awt.Dimension(624, 347));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -95,6 +138,10 @@ public class TelaLogin extends javax.swing.JFrame {
         this.dispose();
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonCadastrarActionPerformed
+
+    private void jPanel1AncestorResized(java.awt.event.HierarchyEvent evt) {//GEN-FIRST:event_jPanel1AncestorResized
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel1AncestorResized
 
     /**
      * @param args the command line arguments
@@ -177,5 +224,5 @@ public class TelaLogin extends javax.swing.JFrame {
         catch (SQLException ex) {
             System.out.println("** deu ruim **");
         }
-}
+    }
 }

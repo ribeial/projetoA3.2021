@@ -5,6 +5,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.PreparedStatement;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -32,6 +33,7 @@ public class UsuarioDAO {
             pstmt.close();
         }
         catch (SQLException ex) {
+//            JOptionPane(" erro ao inserir informações " + ex);
             System.out.println(" erro ao inserir informações " + ex);
         }
     }
@@ -99,4 +101,7 @@ public class UsuarioDAO {
             System.out.println("não foi possivel deletar " + ex);
         }
     }
-}
+
+ 
+    }
+

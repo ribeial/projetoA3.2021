@@ -331,7 +331,7 @@ public class Exercicios extends javax.swing.JFrame {
         ExerciciosDAO dao = new ExerciciosDAO();
         exer.setNomeExercicioso(jTextFieldNomeDoExercício.getText());
         exer.setSerieExercicios(jTextFieldSerie.getText());
-        exer.setRepetição_exercicio(jTextFieldRepetição.getText());
+        exer.setRepeticao_exercicio(jTextFieldRepetição.getText());
         dao.create(exer);
         jTextFieldNomeDoExercício.setText("");
         jTextFieldSerie.setText("");
@@ -346,7 +346,7 @@ public class Exercicios extends javax.swing.JFrame {
             ExerciciosDAO dao = new ExerciciosDAO();
             exer.setNomeExercicioso(jTableExercicios.getValueAt(jTableExercicios.getSelectedRow(), 0).toString());
             exer.setSerieExercicios(jTextFieldSerie.getText());
-            exer.setRepetição_exercicio(jTextFieldRepetição.getText());
+            exer.setRepeticao_exercicio(jTextFieldRepetição.getText());
             dao.update(exer);
             jTextFieldNomeDoExercício.setText("");
             jTextFieldSerie.setText("");

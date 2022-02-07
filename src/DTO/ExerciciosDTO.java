@@ -39,7 +39,7 @@ public class ExerciciosDTO {
         return repeticao_exercicio;
     }
 
-    public void setRepetição_exercicio(String repeticao_exercicio) {
+    public void setRepeticao_exercicio(String repeticao_exercicio) {
         this.repeticao_exercicio = repeticao_exercicio;
     }
 

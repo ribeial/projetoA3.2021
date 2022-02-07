@@ -35,7 +35,7 @@ create table if not exists Exercicios (
 	nome_exercicio varchar(255) primary key not null,
 	serie_exercicio varchar(255) not null,
 	repeticao_exercicio varchar(255) not null
-  );
+);
 
  
 

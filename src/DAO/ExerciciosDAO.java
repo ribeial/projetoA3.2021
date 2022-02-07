@@ -44,7 +44,7 @@ public class ExerciciosDAO {
                 ExerciciosDTO exer = new ExerciciosDTO();
                 exer.setNomeExercicioso(rs.getString("nome_exercicio"));
                 exer.setSerieExercicios(rs.getString("serie_exercicio"));
-                exer.setRepetição_exercicio(rs.getString("repetição_exercicio"));
+                exer.setRepeticao_exercicio(rs.getString("repeticao_exercicio"));
                 exercicios.add(exer);
             }
         }

@@ -27,7 +27,7 @@ create table if not exists Registro_Peso (
 	data_registro date primary key not null,
 	peso varchar(255) not null,
 	altura double null,
-	imc int(10) not null,
+	imc int(100) not null,
 	foreign key(peso) references usuario(cpf)
 );
 

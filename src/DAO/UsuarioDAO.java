@@ -7,8 +7,6 @@ import java.sql.SQLException;
 import java.sql.PreparedStatement;
 //import javax.swing.JOptionPane;
 
-/*testando testando*/
-
 /**
  *
  * @author victo
